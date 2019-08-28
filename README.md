@@ -1,2 +1,2 @@
 # weather-app
-This app shows th e weather
+This app shows the weather
