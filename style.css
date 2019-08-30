@@ -22,7 +22,18 @@
 }
 .grid2 {
     margin-left: 10%;
-    margin-top: 18%;
+    margin-top: 15%;
     background-size: cover;
     font-family: sans-serif;
+}
+#searchcontainer {
+    margin-top: 10%;
+}
+#temperature {
+    font-size: 2em;
+    font-weight: bold;
+}
+#unit {
+    cursor: pointer;
+    color: #1890f0;
 }
