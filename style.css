@@ -33,7 +33,16 @@
     font-size: 2em;
     font-weight: bold;
 }
-#unit {
+#unitf {
     cursor: pointer;
-    color: #1890f0;
+}
+#unitc {
+    cursor: pointer;
+    margin-inline-start: 2px;
+}
+h1 {
+    color: #ffffff;
+}
+#app {
+    color: black;
 }

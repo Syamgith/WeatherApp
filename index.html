@@ -1,3 +1,4 @@
+<!--Weather app-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,14 +11,14 @@
 <body>
     <div class = "grid-container">
         <div class="grid1">
-            <div id="title"><h1>Weather <span>App</span></h1></div>
+            <div id="title"><h1>Weather <span id="app">App</span></h1></div>
         </div>
         <div class="grid2">
             <div id="weathercontainer">
                     <p id="cityname">Bengaluru, Karnataka</p>
                     <p id="date">Friday, 1:00 pm</p>
                     <p id="condition">Partly Cloudy</p>
-                    <p><span id="temperature">26</span><span id="unit" onclick="fahreh()"> C | F</span></p>
+                    <p><span id="temperature">26</span><span id="unitc" onclick="cels()"> C</span><span> | </span><span id="unitf" onclick="fahreh()">F</span></p>
             </div>
             <div id="searchcontainer">Enter city name
                 <br><input type="text" placeholder="city,state" onfocusout="checkClimate()" id="input" list="datalist">
@@ -25,7 +26,7 @@
                     <option value="Banglore, Karnataka"></option>
                     <option value="Chennai, Tamilnadu"></option>
                     <option value="Kochi, Kerala"></option>
-                    <option value="Hydrabad, Andrapradesh"></option>
+                    <option value="Hydrabad, Andra Pradesh"></option>
                     <option value="Kolkata, West Bengal"></option>
                     <option value="Mumbai, Maharastra"></option>
                 </datalist>

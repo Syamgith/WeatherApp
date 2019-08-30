@@ -3,7 +3,7 @@
      {name:"Banglore, Karnataka",temperature:23,condition:"rainy 🌧️"},
      {name:"Chennai, Tamilnadu",temperature:30,condition:"sunny ☀️"},
      {name:"Kochi, Kerala",temperature:27,condition:"cloudy ☁️"},
-     {name:"Hydrabad, Andrapradesh",temperature:35,condition:"sunny ☀️"},
+     {name:"Hydrabad, Andra Pradesh",temperature:35,condition:"sunny ☀️"},
      {name:"Kolkata, West Bengal",temperature:16,condition:"partly cloudy ⛅"},
      {name:"Mumbai, Maharastra",temperature:32,condition:"sunny ☀️"}
     ]
@@ -19,6 +19,7 @@ checkClimate = function(){
     document.getElementById("cityname").innerHTML = filtered[0].name;
     document.getElementById("temperature").innerHTML = filtered[0].temperature;
     document.getElementById("condition").innerHTML = filtered[0].condition;
+    document.getElementById("unitc").style.color = "blue";
     //geting and printing day and date
     var day = new Date();
     var n = day.getDay();
@@ -26,10 +27,15 @@ checkClimate = function(){
     document.getElementById("date").innerHTML = week[n] + ", " + new Date().getHours() + ":" + new Date().getMinutes();
     //celsius to fahrenheit
     fahreh = function(){
-        
-        var fahrehn = filtered[0].temperature * (9/5) + 32;
-        document.getElementById("temperature").innerHTML = fahrehn;
+            var fahrehn = filtered[0].temperature * (9/5) + 32;
+            document.getElementById("temperature").innerHTML = fahrehn;
+            document.getElementById("unitf").style.color = "blue";
+            document.getElementById("unitc").style.color = "black";
+
     }
-
-
+    cels = function(){
+        document.getElementById("temperature").innerHTML = filtered[0].temperature;
+        document.getElementById("unitc").style.color = "blue";
+        document.getElementById("unitf").style.color = "black";
+    }
 }
