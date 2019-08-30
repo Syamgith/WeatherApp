@@ -1,7 +1,28 @@
-#main {
-    position: absolute;
-    background-size: cover;
-}
 #cityname {
     font-size: 35px;
+}
+#title {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    justify-content: center;
+    background-color: #1890f0;
+    margin-top: 40%;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    width: 100%;
+    height: 100%;
+    
+}
+.grid1 {
+    background-color: #1890f0;
+}
+.grid2 {
+    margin-left: 10%;
+    margin-top: 18%;
+    background-size: cover;
+    font-family: sans-serif;
 }

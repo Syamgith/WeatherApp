@@ -8,27 +8,25 @@
     <script src="app.js"></script>
 </head>
 <body>
-    <div id="main">
-        <div id="weathercontainer">
-                <p id="cityname">Bengaluru, Karnataka</p>
-                <p id="date">Wednesday, 1:00 pm</p>
-                <p id="condition">Partly Cloudy</p>
-                <p><span id="temperature">26</span><span id="unit"> C|F</span></p>
+    <div class = "grid-container">
+        <div class="grid1">
+            <div id="title"><h1>Weather <span>App</span></h1></div>
         </div>
-
-
-
-
-
-
-
-        <div id="searchcontainer">Enter city name
-            <br><input type="text" placeholder="city,state" onfocusout="checkClimate()" id="input" list="datalist">
-            <datalist id="datalist">
-                <option value="Banglore,Karnataka"></option>
-                <option value="Chennai"></option>
-                <option value="Kochi, Kerala"></option>
-            </datalist>
+        <div class="grid2">
+            <div id="weathercontainer">
+                    <p id="cityname">Bengaluru, Karnataka</p>
+                    <p id="date">Wednesday, 1:00 pm</p>
+                    <p id="condition">Partly Cloudy</p>
+                    <p><span id="temperature">26</span><span id="unit"> C|F</span></p>
+            </div>
+            <div id="searchcontainer">Enter city name
+                <br><input type="text" placeholder="city,state" onfocusout="checkClimate()" id="input" list="datalist">
+                <datalist id="datalist">
+                    <option value="Banglore, Karnataka"></option>
+                    <option value="Chennai"></option>
+                    <option value="Kochi, Kerala"></option>
+                </datalist>
+            </div>
         </div>
     </div>
 </body>
