@@ -1,5 +1,7 @@
-#searchcontainer {
-    text-align: center;
-    top: 20%;
-    padding: 2em;
+#main {
+    position: absolute;
+    background-size: cover;
+}
+#cityname {
+    font-size: 35px;
 }

@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <div id="main">
+        <div id="weathercontainer">
+                <p id="cityname">Bengaluru, Karnataka</p>
+                <p id="date">Wednesday, 1:00 pm</p>
+                <p id="condition">Partly Cloudy</p>
+                <p><span id="temperature">26</span><span id="unit"> C|F</span></p>
+        </div>
+
+
+
+
+
+
+
+        <div id="searchcontainer">Enter city name
+            <br><input type="text" placeholder="city,state" onfocusout="checkClimate()" id="input" list="datalist">
+            <datalist id="datalist">
+                <option value="Banglore,Karnataka"></option>
+                <option value="Chennai"></option>
+                <option value="Kochi, Kerala"></option>
+            </datalist>
+        </div>
+    </div>
+</body>
+</html>
