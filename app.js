@@ -1,11 +1,11 @@
 //create an array which contains city name and its temperature
  var cities = [
-     {name:"Banglore, Karnataka",temperature:23,condition:"rainy 🌧️"},
-     {name:"Chennai, Tamilnadu",temperature:30,condition:"sunny ☀️"},
-     {name:"Kochi, Kerala",temperature:27,condition:"cloudy ☁️"},
-     {name:"Hydrabad, Andra Pradesh",temperature:35,condition:"sunny ☀️"},
-     {name:"Kolkata, West Bengal",temperature:16,condition:"partly cloudy ⛅"},
-     {name:"Mumbai, Maharastra",temperature:32,condition:"sunny ☀️"}
+     {name:"Banglore, Karnataka",temperature:23,condition:"Rainy 🌧️"},
+     {name:"Chennai, Tamilnadu",temperature:30,condition:"Sunny ☀️"},
+     {name:"Kochi, Kerala",temperature:27,condition:"Cloudy ☁️"},
+     {name:"Hydrabad, Andra Pradesh",temperature:35,condition:"Sunny ☀️"},
+     {name:"Kolkata, West Bengal",temperature:16,condition:"Partly cloudy ⛅"},
+     {name:"Mumbai, Maharastra",temperature:32,condition:"Sunny ☀️"}
     ]
 
 checkClimate = function(){
@@ -20,6 +20,7 @@ checkClimate = function(){
     document.getElementById("temperature").innerHTML = filtered[0].temperature;
     document.getElementById("condition").innerHTML = filtered[0].condition;
     document.getElementById("unitc").style.color = "blue";
+    document.getElementById("unitf").style.color = "black";
     //geting and printing day and date
     var day = new Date();
     var n = day.getDay();
