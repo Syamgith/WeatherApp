@@ -1,6 +1,5 @@
 * {
     margin: 0;
-    
 }
 #cityname {
     font-size: 35px;
@@ -34,15 +33,20 @@
     margin-top: 10%;
 }
 #temperature {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bold;
 }
-#unitf {
-    cursor: pointer;
+#unitf:hover {
+    
+    color: rgb(0, 204, 255);
 }
-#unitc {
-    cursor: pointer;
+#unitc:hover {
+    
     margin-inline-start: 2px;
+    color: rgb(0, 204, 255);
+}
+sup {
+    cursor: pointer;
 }
 h1 {
     color: #ffffff;

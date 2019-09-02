@@ -1,3 +1,4 @@
+//Weather App
 //create an array which contains city name and its temperature
 var cities = [
     {name:"Banglore, Karnataka",temperature:23,condition:"Rainy 🌧️"},
@@ -24,7 +25,7 @@ checkClimate = function(){
    //geting and printing day and date
    var day = new Date();
    var n = day.getDay();
-   let week = ['sunday', 'Monday', 'Tuesday', 'Wenesday', 'Thursday', 'Friday', 'Saturday'];
+   let week = ['Sunday', 'Monday', 'Tuesday', 'Wenesday', 'Thursday', 'Friday', 'Saturday'];
    document.getElementById("date").innerHTML = week[n] + ", " + new Date().getHours() + ":" + new Date().getMinutes();
    //celsius to fahrenheit
    fahreh = function(){
